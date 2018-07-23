@@ -18,9 +18,9 @@ test('roster has all attributes', () => {
   expect(roster)
     .toContainEqual(
       expect.objectContaining({ 
-        name: expect.anything(),
-        speed: expect.anything(),
-        strength: expect.anything(),
+        name: expect.any(String),
+        speed: expect.any(Number),
+        strength: expect.any(Number),
       })
     );
 });
@@ -30,4 +30,4 @@ test('roster has all attributes', () => {
 //     expect(roster[i].speed).toBeLessThan(50);
 //     expect(roster[i].strength).toBeLessThan(50);
 //   }
-// };
+// }; 
