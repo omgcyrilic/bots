@@ -25,9 +25,17 @@ test('roster has all attributes', () => {
     );
 });
 
-// test('attributes in range'), () => {
-//   for(let i = 0; i < roster.length; i++) {
-//     expect(roster[i].speed).toBeLessThan(50);
-//     expect(roster[i].strength).toBeLessThan(50);
-//   }
-// }; 
+test('bot attributes in range', () => {
+  for (let i = 0; i < roster.length; i++) {
+    expect(roster[i].strength + roster[i].strength).toBeLessThanOrEqual(100);
+  }
+});
+
+let nameArray = [];
+for (let i = 0; i < roster.length; i++) {
+  nameArray.push(roster[i].name);
+}
+test('unique bot names', () => {
+  var uniqueBotNames = Array.from(new Set(nameArray));
+  expect(uniqueBotNames.length).toEqual(15);
+});
