@@ -1,12 +1,18 @@
 # Bender Bots
 
-A dynamically generated bot roster for team Bender. Refresh for a new roster! Live production version: https://bots.eatthisbeef.com/
+A dynamically generated bot roster for team Bender. Refresh for a new roster!
+
+Live production version: https://bots.eatthisbeef.com/
 
 ## Features
+* Node
 * React
   * [create-react-app](https://github.com/facebook/create-react-app)
   * Webpack
-  * Babel * ESLint * Sass * No console errors/warnings
+  * Babel
+* ESLint
+* Sass 
+* No console errors/warnings
 
 ## Local Setup
 ```bash
