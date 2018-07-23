@@ -31,7 +31,3 @@ test('roster has all attributes', () => {
 //     expect(roster[i].strength).toBeLessThan(50);
 //   }
 // };
-
-test('attributes in range'), () => {
-  expect(10).toBeLessThan(20);
-};
