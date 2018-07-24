@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
-import bender from './img/bender.png';
+import bender from '../img/bender.png';
 import $ from 'jquery';
-import './styles/base.scss';
+import '../styles/base.scss';
 
 export let roster = [];
 export let sortedRoster = [];
